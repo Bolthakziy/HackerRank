@@ -10,7 +10,6 @@ struct triangle
 };
 
 typedef struct triangle triangle;
-
 void sort_by_area(triangle* tr, int n) {
 	/**
 	* Sort an array a of the length n
@@ -45,6 +44,9 @@ void sort_by_area(triangle* tr, int n) {
 			}
 		}
 	}
+
+	free(trWidth);
+	free(p);
 }
 
 int main()
@@ -59,5 +61,6 @@ int main()
 	for (int i = 0; i < n; i++) {
 		printf("%d %d %d\n", tr[i].a, tr[i].b, tr[i].c);
 	}
+
 	return 0;
 }
