@@ -10,6 +10,7 @@ int main()
 	char ch;
 	char s[MAX_LEN], sen[MAX_LEN];
 
+	/* Enter your code here. Read input from STDIN. Print output to STDOUT */
 	scanf("%c", &ch);
 	printf("%c\n", ch);
 	scanf("%s", s);
@@ -18,6 +19,5 @@ int main()
 	scanf("%[^\n]%*c", sen);
 	printf("%s\n", sen);
 
-	/* Enter your code here. Read input from STDIN. Print output to STDOUT */    
 	return 0;
 }
