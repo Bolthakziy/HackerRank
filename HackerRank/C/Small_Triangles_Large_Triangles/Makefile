@@ -1,4 +1,4 @@
-cc = gcc
+CC = gcc
 TARGET = Small_Triangles_Large_Triangles.out
 OBJS = Small_Triangles_Large_Triangles.o
 
