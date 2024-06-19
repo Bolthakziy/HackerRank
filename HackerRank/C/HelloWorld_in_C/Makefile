@@ -1,13 +1,13 @@
 CC = gcc
-TARGET = HelloWorld_in_C.out
-OBJS = HelloWorld_in_C.o
+TARGET = Hello_World_in_C.out
+OBJS = Hello_World_in_C.o
 
 $(TARGET) : $(OBJS)
-	$(CC) -o $@ $(OBJS)
+	$(CC) -o $@ $(OBJS) -lm
 
-HelloWorld_in_C.o : HelloWorld_in_C.c
-	$(CC) -c -o HelloWorld_in_C.o HelloWorld_in_C.c
+$(OBJS) : Hello_World_in_C.o
+	$(CC) -c -o $(OBJS) Hello_World_in_C.c
 
-clean :
+claen :
 	rm $(OBJS)
 	rm $(TARGET)
